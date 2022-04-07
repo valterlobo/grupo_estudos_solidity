@@ -27,5 +27,7 @@ https://docs.openzeppelin.com/contracts/4.x/
 ## How does Ethereum work, anyway?
 https://preethikasireddy.medium.com/how-does-ethereum-work-anyway-22d1df506369
 
+## Cheat-Sheet solidity
+https://intellipaat.com/mediaFiles/2019/03/Solidity-Cheat-Sheet.pdf
 
 
