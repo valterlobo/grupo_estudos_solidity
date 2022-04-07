@@ -2,6 +2,9 @@
 
 - ## 1)Etherum como funciona(máquina de estado) - PARTE 1
 
+    https://txstreet.com/v/eth-btc
+    
+
 
 - ## 2)Primeiro contrato
 
@@ -46,3 +49,10 @@ Variáveis imutáveis são como constantes. Valores de variáveis imutáveis pod
 
 --------- 
 [Cheat-Sheet solidity](https://intellipaat.com/mediaFiles/2019/03/Solidity-Cheat-Sheet.pdf)
+
+
+# Dever de casa 
+
+ - 1) Aprender sobre blockchain básico, EVM - máquina de estado.
+ - 2) Criar alguns contratos simples no remix - tipos básicos.
+ - 3) Descobrir porque a solidity  não tem número decimal e como realizar contas com decimais em solidity.
