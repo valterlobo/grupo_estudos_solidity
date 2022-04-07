@@ -44,5 +44,5 @@ Variáveis imutáveis são como constantes. Valores de variáveis imutáveis pod
 
 [immutable.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_1/immutable.sol)
 
-
-[REF](https://intellipaat.com/mediaFiles/2019/03/Solidity-Cheat-Sheet.pdf)
+--------- 
+[Cheat-Sheet solidity](https://intellipaat.com/mediaFiles/2019/03/Solidity-Cheat-Sheet.pdf)
