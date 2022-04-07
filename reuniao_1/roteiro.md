@@ -23,11 +23,12 @@
     [ variables.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_1/variables.sol)
 
 - ## 4) Tipos de dados   primitivos
-     primitives.sol
+    
      - boolean
      - uint
      - int
      - address
+      [primitives.sol]https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_1/primitives.sol)
 
 - ## 5) Constantes:
 
