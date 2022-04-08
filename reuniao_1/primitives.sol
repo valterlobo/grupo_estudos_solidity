@@ -52,4 +52,11 @@ contract Primitives {
     uint256 public defaultUint; // 0
     int256 public defaultInt; // 0
     address public defaultAddr; // 0x0000000000000000000000000000000000000000
+
+
+    function overflowTest() public {
+        i8 = 126;
+        i8 =i8 + 10;  
+    }
+
 }
