@@ -56,3 +56,20 @@ Variáveis imutáveis são como constantes. Valores de variáveis imutáveis pod
  - 1) Aprender sobre blockchain básico, EVM - máquina de estado.
  - 2) Criar alguns contratos simples no remix - tipos básicos.
  - 3) Descobrir porque a solidity  não tem número decimal e como realizar contas com decimais em solidity.
+  Ref: 
+        Matemática em Solidity (Parte 1: Números)
+        https://www.web3dev.com.br/yanluiz/matematica-em-solidity-parte-1-numeros-4jb2
+
+        Matemática em Solidity (Parte 2: Overflow)
+        https://www.web3dev.com.br/yanluiz/matematica-em-solidity-parte-2-overflow-53p6
+
+
+        Matemática em Solidity (Parte 3: Porcentagens e Proporções)
+        https://www.web3dev.com.br/yanluiz/matematica-em-solidity-parte-3-porcentagens-e-proporcoes-3g83
+
+        Matemática em Solidity (Parte 4: Juros Compostos) 
+        https://www.web3dev.com.br/yanluiz/matematica-em-solidity-parte-4-juros-compostos-4b7k
+
+        Matemática em Solidity (Parte 5: Expoente e Logaritmo)
+        https://www.web3dev.com.br/yanluiz/matematica-em-solidity-parte-5-expoente-e-logaritmo-25l5
+
