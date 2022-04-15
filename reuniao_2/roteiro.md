@@ -1,4 +1,4 @@
-# ROTEIRO : 2 - Reunião -  Solidity mapping , array , if, for, while,  function. 
+# ROTEIRO : 2 - Reunião -  Solidity mapping , array , if, for, while,  function.
 
 
 - ## 1)Etherum como funciona(máquina de estado) - PARTE 2
@@ -50,20 +50,24 @@
     
       ​     `function funcao( param1 tipo, param2 tipo ) return (uint) {`
     
-      ​                           `return param1 + param2;`  
+      ​                           `return param1 + param2;`
     
       ​     `}`
       
     - O escopo das variáveis de estado e funções é controlado pelas seguintes palavras-chave possíveis:
     
      • **public**    - Todos podem acessar
+     
      • ** external** - Não pode ser acessado internamente, apenas externamente. De funções internas, deve ser chamado com isto-->func_name()
+     
      • **internal**  - somente este contrato e os contratos derivados dele podem acessá-lo
+     
      • **private**   - pode ser acessado apenas a partir deste contrato, contratos herdados de outro não podem acessá-lo
+     
 
-      Como você pode notar, private  é um subconjunto de internal e external é um subconjunto de public. Ao definir uma função, você tem a seguinte sintaxe:
+  Como você pode notar, private  é um subconjunto de internal e external é um subconjunto de public. Ao definir uma função, você tem a seguinte sintaxe:
 
-            function nome_function(type1 var1, ...) public [payable|pure|view] [returns (type var)] { ... }
+            function nome_function(type1 var1, ...) [public,external,private]  [payable|pure|view] [returns (type var)] { ... }
 
   - Pure, view, payable
     -  view: A função NÃO alterará o armazenamento do contrato
@@ -91,7 +95,9 @@
                             result = para1 + para2;
                             return  result;
                         }`
-    
+
+    **payable** -- zzzzzz
+
     [function.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_2/function.sol)
     [payable.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_2/payable.sol)
 
