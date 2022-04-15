@@ -1,7 +1,7 @@
 # ROTEIRO : 2 - Reunião -  Solidity mapping , array , if, for, while,  function. 
 
 
-- ## 1)Etherum como funciona(máquina de estado) - PARTE 2 
+- ## 1)Etherum como funciona(máquina de estado) - PARTE 2
 
    -  enderços de contrato e conta, estado
 
@@ -93,6 +93,7 @@
                         }`
     
     [function.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_2/function.sol)
+    [payable.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_2/payable.sol)
 
 ---------
 [Cheat-Sheet solidity](https://intellipaat.com/mediaFiles/2019/03/Solidity-Cheat-Sheet.pdf)
