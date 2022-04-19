@@ -1,0 +1,14 @@
+
+# ROTEIRO: 5 - IDE - VSCODE + PLUGINS, HARDHAT, INFURA, IPFS
+
+
+## 1) IDE - VSCODE + PLUGINS
+
+## 2) HARDHAT 
+
+
+## 3) NODE INFURA
+
+
+## 4 ) IPFS
+ 
