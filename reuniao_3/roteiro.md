@@ -28,17 +28,17 @@ Você pode importar arquivos locais e externos no Solidity.
 
    Utilizando
  
-        pragma solidity ^0.5.0;
+        pragma solidity ^0.8.0;
 
-        import "@openzeppelin/contracts/token/ERC721/ERC721Full.sol";
-        import "@openzeppelin/contracts/token/ERC721/ERC721Mintable.sol";
+        import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+      
 
-        contract MyNFT is ERC721Full, ERC721Mintable {
+        contract MyNFT is ERC721  {
             constructor() ERC721Full("MyNFT", "MNFT") public {
             }
         }
 
-
+obs: estudar sobre o @xxxx , da lib - como e feito a referencia. 
 ## 2)  library
 
 As bibliotecas são semelhantes aos contratos, mas você não pode declarar nenhuma variável de estado e não pode enviar ether.
@@ -141,6 +141,7 @@ O principal caso de uso de modificadores é verificar automaticamente uma condi�
   [Writing Robust Smart Contracts in Solidity](https://blog.colony.io/writing-more-robust-smart-contracts-99ad0a11e948/)
 
   [Solidity Tutorial: all about Modifiers](https://medium.com/coinmonks/solidity-tutorial-all-about-modifiers-a86cf81c14cb)
+  
 
 ## 6) Eventos 
  Os eventos permitem o registro no blockchain Ethereum. Alguns casos de uso para eventos são:
@@ -150,6 +151,20 @@ O principal caso de uso de modificadores é verificar automaticamente uma condi�
 
   [events.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_3/events.sol)
 
-```
 
-[Cheat-Sheet solidity](https://intellipaat.com/mediaFiles/2019/03/Solidity-Cheat-Sheet.pdf)
+
+# DEVER DE CASA
+
+
+- Desenvolver um contrato carteira compartilhada
+
+   **depositar**  - sender envia um deposito
+
+   **saque**  - sender solicita uma retirada - somente pode realizar a retirada dos depositos.
+
+   **adminstrador** - responsavel pelo contrato, somente o administrador pode realizar saque e obter o saldo do contrato. 
+  
+- X regras:
+    -   o deposito rende *x%*  dia - a retirada somente pode ser feita com juros apos x dias.
+
+
