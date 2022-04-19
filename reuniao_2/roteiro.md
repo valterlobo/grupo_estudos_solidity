@@ -84,7 +84,8 @@
                         }
                     }
 
-    **pure** pode ser considerado como o subconjunto de constante em que o valor de retorno será determinado apenas por seus parâmetros (valores de entrada). Não haverá leitura ou gravação no armazenamento e apenas a variável local será usada (tem o conceito de funções puras na programação funcional).
+
+  **pure** pode ser considerado como o subconjunto de constante em que o valor de retorno será determinado apenas por seus parâmetros (valores de entrada). Não haverá leitura ou gravação no armazenamento e apenas a variável local será usada (tem o conceito de funções puras na programação funcional).
   
                    contract pureExample {
                         // other contract functions
@@ -94,7 +95,8 @@
                             return  result;
                         }
 
-    **payable** - Ao escrever um contrato inteligente, você precisa garantir que o dinheiro seja enviado para o contrato e também para fora do contrato. Payable faz isso para você, qualquer função no Solidity com o modificador Payable garante que a função possa enviar e receber Ether. 
+  
+  **payable** - Ao escrever um contrato inteligente, você precisa garantir que o dinheiro seja enviado para o contrato e também para fora do contrato. Payable faz isso para você, qualquer função no Solidity com o modificador Payable garante que a função possa enviar e receber Ether. 
   obs : transações com valor zero sao rejeitadas.
     
     
@@ -124,7 +126,7 @@ As variáveis são declaradas como **storage**, **memory** ou **calldata** para 
 
  [datalocations.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_2/datalocations.sol)
  
- 
+
 ## 8) struct
 
 Você pode definir seu próprio tipo criando um struct.
