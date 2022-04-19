@@ -92,12 +92,25 @@
                             // do whatever with para1 and para2 and assign to result as below
                             result = para1 + para2;
                             return  result;
-                        }`
+                        }
 
-    **payable** -- zzzzzz
+    **payable** - Ao escrever um contrato inteligente, você precisa garantir que o dinheiro seja enviado para o contrato e também para fora do contrato. Payable faz isso para você, qualquer função no Solidity com o modificador Payable garante que a função possa enviar e receber Ether. 
+  obs : transações com valorzero sao rejeitadas.
+    
+    
+                       contract payableExample {
+                        //payable obs : error public ?????
+                        function receive() payable {}
+                        
+                        function balanace() public view returns (uint amount) {
+                              return address(this).balance;
+                                   
+                        }
 
-    [function.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_2/function.sol)
-    [payable.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_2/payable.sol)
+
+
+   [function.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_2/function.sol)
+   [payable.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_2/payable.sol)
 
 ## 7) Storage, Memory and Calldata
 
