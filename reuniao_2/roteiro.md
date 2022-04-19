@@ -22,8 +22,8 @@
  ## 3) Array 
 
    - O array pode ter um tamanho fixo em tempo de compilação ou um tamanho dinâmico.
-   - 
-    [array.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_2/reuniao_2/array.sol)
+  
+  [array.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_2/reuniao_2/array.sol)
     
 ## 4) Condicional if  
   
