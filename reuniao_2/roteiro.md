@@ -95,7 +95,7 @@
                         }
 
     **payable** - Ao escrever um contrato inteligente, você precisa garantir que o dinheiro seja enviado para o contrato e também para fora do contrato. Payable faz isso para você, qualquer função no Solidity com o modificador Payable garante que a função possa enviar e receber Ether. 
-  obs : transações com valorzero sao rejeitadas.
+  obs : transações com valor zero sao rejeitadas.
     
     
                        contract payableExample {
