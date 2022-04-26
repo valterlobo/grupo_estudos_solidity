@@ -166,5 +166,3 @@ O principal caso de uso de modificadores √© verificar automaticamente uma condi√
   
 - X regras:
     -   o deposito rende *x%*  dia - a retirada somente pode ser feita com juros apos x dias.
-
-

@@ -60,4 +60,11 @@ address payable _to ;
 ref : https://medium.com/coinmonks/solidity-transfer-vs-send-vs-call-function-64c92cfc878a
 
 
+## Chamando outros  Contratos: 
+https://solidity-by-example.org/calling-contract
+
+Solidity Grátis
+https://solidity.coflow.com.br/blog/guia-solidity/
+
+
 [Cheat-Sheet solidity](https://intellipaat.com/mediaFiles/2019/03/Solidity-Cheat-Sheet.pdf)
