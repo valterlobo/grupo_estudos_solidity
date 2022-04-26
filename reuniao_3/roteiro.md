@@ -6,9 +6,9 @@ Você pode importar arquivos locais e externos no Solidity.
 
 **Local** -  Está a na estrutura de pastas local.
 
-  [Fool.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_3/Fool.sol)
+  [Fool.sol](Fool.sol)
   
-  [Import.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_3/Import.sol)
+  [Import.sol](Import.sol)
 
 
 **External**
@@ -20,6 +20,18 @@ Você pode importar arquivos locais e externos no Solidity.
     // https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.5/contracts/utils/cryptography/ECDSA.sol
 
     import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.5/contracts/utils/cryptography/ECDSA.sol";
+
+
+
+ **Aliases são úteis nos casos:**
+ 
+ - **Evitar colisões de nomes**: nos casos em que o que você deseja importar já foi importado por outros arquivos. Se você encontrar colisões de nomenclatura durante a importação, use aliases para resolver isso.
+  
+ - **Evitar um comportamento inesperado** (se o compilador não o sinalizou e uma variável que você está usando referencia a variável errada importada de outro lugar).
+ 
+ - **Renomeie o que você está importando**: se quiser usar nomes mais significativos em seu contexto e para clareza de código.
+
+ref : [Solidity Tutorial: All About Imports](https://betterprogramming.pub/solidity-tutorial-all-about-imports-c65110e41f3a)
 
 
 **OpenZeppelin** 
@@ -47,7 +59,7 @@ Uma biblioteca é incorporada ao contrato se todas as funções da biblioteca fo
 
 Caso contrário, a biblioteca deve ser implantada e vinculada antes que o contrato seja implantado.
 
-[library.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_3/library.sol)
+[library.sol](library.sol)
 
 
 ## 3) interface
@@ -60,7 +72,7 @@ Caso contrário, a biblioteca deve ser implantada e vinculada antes que o contra
 - não pode declarar um construtor
 - não pode declarar variáveis ​​de estado
 
-    [interface.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_3/interface.sol)
+[interface.sol](interface.sol)
 
 ## 4) Herança
 
@@ -74,7 +86,7 @@ Solidity suporta herança múltipla. Os contratos podem herdar outro contrato us
 
 - Você deve listar os contratos-pai na ordem de “mais básicos” para “mais derivados”.
   
-[heranca.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_3/heranca.sol)
+[heranca.sol](heranca.sol)
 
   
 ## 4) required,assert
@@ -116,7 +128,7 @@ Então, se revert()e require() ambos reembolsam qualquer sobra de gás, e permit
 - Lide com o mesmo tipo de situações que require(), mas com uma lógica mais complexa.
 
 
-   [RequireExample.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_3/RequireExample.sol)
+[RequireExample.sol](RequireExample.sol)
 
 ## 5) modifier
 
@@ -132,14 +144,14 @@ O principal caso de uso de modificadores é verificar automaticamente uma condi�
          // function code .....
     }
 
-  [modifier_example.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_3/modifier_example.sol)
+  [modifier_example.sol](modifier_example.sol)
 
-  [AccessRestriction.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_3/AccessRestriction.sol)
+  [AccessRestriction.sol](AccessRestriction.sol)
   
   ref:
 
   [Writing Robust Smart Contracts in Solidity](https://blog.colony.io/writing-more-robust-smart-contracts-99ad0a11e948/)
-
+  
   [Solidity Tutorial: all about Modifiers](https://medium.com/coinmonks/solidity-tutorial-all-about-modifiers-a86cf81c14cb)
   
 
@@ -149,7 +161,7 @@ O principal caso de uso de modificadores é verificar automaticamente uma condi�
  - Ouvindo eventos e atualizando a interface do usuário 
  - Uma forma barata de armazenamento
 
-  [events.sol](https://raw.githubusercontent.com/valterlobo/grupo_estudos_solidity/main/reuniao_3/events.sol)
+[events.sol](events.sol)
 
 
 

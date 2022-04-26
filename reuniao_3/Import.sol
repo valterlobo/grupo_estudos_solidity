@@ -5,6 +5,7 @@ pragma solidity ^0.8.10;
 import "./Foo.sol";
 
 // import {symbol1 as alias, symbol2} from "filename";
+//Importações Específicas 
 import {Unauthorized, add as func, Point} from "./Foo.sol";
 
 contract Import {
