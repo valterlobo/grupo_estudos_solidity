@@ -50,7 +50,8 @@ ref : [Solidity Tutorial: All About Imports](https://betterprogramming.pub/solid
             }
         }
 
-obs: estudar sobre o @xxxx , da lib - como e feito a referencia. 
+obs: estudar sobre o @xxxx , da lib - como e feito a referencia.
+
 ## 2)  library
 
 As bibliotecas são semelhantes aos contratos, mas você não pode declarar nenhuma variável de estado e não pode enviar ether.
@@ -58,6 +59,8 @@ As bibliotecas são semelhantes aos contratos, mas você não pode declarar nenh
 Uma biblioteca é incorporada ao contrato se todas as funções da biblioteca forem internas.
 
 Caso contrário, a biblioteca deve ser implantada e vinculada antes que o contrato seja implantado.
+
+??? use library ??????
 
 [library.sol](library.sol)
 
@@ -162,7 +165,6 @@ O principal caso de uso de modificadores é verificar automaticamente uma condi�
  - Uma forma barata de armazenamento
 
 [events.sol](events.sol)
-
 
 
 # DEVER DE CASA

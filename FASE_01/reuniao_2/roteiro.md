@@ -1,9 +1,18 @@
 # ROTEIRO : 2 - Reunião -  Solidity mapping , array , if, for, while,  function.
 
 
- ## 1) Revisao do dever de casa
+ ## 1) Como trabalhar com ponto flutuante com solidity
 
    -  solididty - tipos ponto flutuante/decimal/float
+  Ref: 
+      [Matemática em Solidity (Parte 1: Números)](https://www.web3dev.com.br/yanluiz/matematica-em-solidity-parte-1-numeros-4jb2)
+     [Matemática em Solidity (Parte 2: Overflow)](https://www.web3dev.com.br/yanluiz/matematica-em-solidity-parte-2-overflow-53p6)
+     [Matemática em Solidity (Parte 3: Porcentagens e Proporções)](https://www.web3dev.com.br/yanluiz/matematica-em-solidity-parte-3-porcentagens-e-proporcoes-3g83)
+    [Matemática em Solidity (Parte 4: Juros Compostos)](https://www.web3dev.com.br/yanluiz/matematica-em-solidity-parte-4-juros-compostos-4b7k)
+    [Matemática em Solidity (Parte 5: Expoente e Logaritmo)](https://www.web3dev.com.br/yanluiz/matematica-em-solidity-parte-5-expoente-e-logaritmo-25l5)
+
+
+
    
 
  ## 2) Mapping
@@ -173,5 +182,9 @@ Os structs podem ser declarados fora de um contrato e importados em outro contra
              }
 
 ```
----------
-[Cheat-Sheet solidity](https://intellipaat.com/mediaFiles/2019/03/Solidity-Cheat-Sheet.pdf)
+
+ ### e) Realizar testes passagem por referencia x valor ?
+
+
+  funcao que altera um o valor de um int e outra que alterar o valor de um array de int.
+

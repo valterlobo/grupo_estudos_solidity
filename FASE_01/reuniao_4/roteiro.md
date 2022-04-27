@@ -1,20 +1,43 @@
 # ROTEIRO: 4 - Reunião - transaction, gas , remix debug , selft destruct , ABI , address 
 
 
-## 1) ddddddd
+## 1) Sobre etherum 
 
-   -  endereços de contrato e conta, estado  ????? 
+   -  enderecos de contrato e conta, estado  ????? 
+
+ definition
+· blocks
+· the state
+· nodes communications
+· miners
+· validity 
+· consensus
+· proof of work
+· proof of Stake
+· The Merge
+· transactions
+· networks
+· Ether
+· ETH & Ethereum
+· user accounts
+· contracts
+· addresses
+· EVM
+· Gas
+· Sidechains
+
+ conceitos de Etherum https://twitter.com/FrancescoCiull4/status/1518825903677136898
 
 
-## ABI
+## 2) ABI , web3.js 
 
 arrquivo no formato JSON 
 informaç~oes para interagir com o contrato
 
-## Using library  for type
 
 
-## fallback,  address transfer vs send vs call function
+
+## 3) fallback,  address transfer vs send vs call function
 
 
 **fallback**  é uma função que não recebe argumentos e não retorna nada.
@@ -60,11 +83,9 @@ address payable _to ;
 ref : https://medium.com/coinmonks/solidity-transfer-vs-send-vs-call-function-64c92cfc878a
 
 
-## Chamando outros  Contratos: 
+## 4) Chamando outros  Contratos:
+
 https://solidity-by-example.org/calling-contract
 
-Solidity Grátis
-https://solidity.coflow.com.br/blog/guia-solidity/
 
 
-[Cheat-Sheet solidity](https://intellipaat.com/mediaFiles/2019/03/Solidity-Cheat-Sheet.pdf)
