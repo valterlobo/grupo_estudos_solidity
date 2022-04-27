@@ -1,6 +1,6 @@
 ## FASE 1 - INICIANDO & SOLIDITY BÁSICO
    
-   Básico de solidity com o remix , conceitos basico de blockchain/etherum. 
+   Básico de solidity com o remix , conceitos basico de blockchain/etherum.
  
    [ROTEIRO](/FASE_01/roteiro.md)
     
