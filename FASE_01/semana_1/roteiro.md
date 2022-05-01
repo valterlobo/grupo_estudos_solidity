@@ -173,8 +173,54 @@ A diferença entre os dois é que um tipo **address payable** é um endereço pa
             buyer.transfer(price); //transfers the price of the item
          }
 
-   [primitives.sol](primitives.sol)
+   
 
+   É possível consultar o saldo de um endereço usando a propriedade balance e enviar Ether (em unidades de wei) para um endereço a pagar usando a função transfer:
+
+
+       address payable x = payable(0x123);
+       address myAddress = address(this);
+       if (x.balance < 10 && myAddress.balance >= 10) x.transfer(10);
+
+A função transfer falha se o saldo do contrato atual não for grande o suficiente ou se a transferência de Ether for rejeitada pela conta receptora. A transfer reverte em caso de falha.
+
+**Send** é a contrapartida de baixo nível do transfer. Se a execução falhar, o contrato atual não será interrompido com exceção, mas send retornará false.
+
+   **Operadores:**
+
+     <=, <, ==, e !=_>=>
+
+
+##  Byte
+
+### **bytes de tamanho fixo**
+
+Os tipos de valor bytes1, bytes2, bytes3, …, bytes32 mantêm uma sequência de bytes de um a até 32.
+
+**Operadores:** 
+
+ - Comparações: <=, <, ==, !=, >=, >(avaliar para bool)
+
+ - Operadores de bit: &, |, ^(exclusivo bit a bit ou), ~(negação bit a bit)
+
+ - Operadores de deslocamento: <<(deslocamento à esquerda), >>(deslocamento à direita)
+
+ - Acesso ao índice: Se xfor do tipo bytesI, então x[k]for retorna o º byte (somente leitura).0 <= k < Ik
+
+O operador de deslocamento funciona com o tipo inteiro sem sinal como operando direito (mas retorna o tipo do operando esquerdo), o que denota o número de bits para deslocamento. Deslocar por um tipo assinado produzirá um erro de compilação.
+
+Membros:
+- .length retorna  o comprimento fixo da matriz de bytes (somente leitura).
+
+### **bytes de tamanho dinâmico**
+
+bytes: Matriz de bytes de tamanho dinâmico, consulte arrays . Não é um tipo de valor!
+
+string - String codificada em UTF-8 de tamanho dinâmico, consulte arrays . Não é um tipo de valor!
+
+[Solidity Tutorial : all about Bytes](https://jeancvllr.medium.com/solidity-tutorial-all-about-bytes-9d88fdb22676)
+
+[primitives.sol](primitives.sol)
 
 # 5) Constantes:
 
@@ -231,7 +277,6 @@ Os structs podem ser declarados fora de um contrato e importados em outro contra
 
 REF :
 https://docs.soliditylang.org/en/v0.8.13/
-
 
 
 # PROGRAMANDO

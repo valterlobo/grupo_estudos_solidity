@@ -46,6 +46,11 @@ contract Primitives {
     bytes1 a = 0xb5; //  [10110101]
     bytes1 b = 0x56; //  [01010110]
 
+    bytes c =new bytes(0);
+
+    uint256  sizeC =  c.length; 
+
+
     // Valores padrão
     // Variáveis não atribuídas têm um valor padrão
     bool public defaultBoo; // false
