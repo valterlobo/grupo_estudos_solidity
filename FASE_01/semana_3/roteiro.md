@@ -1,6 +1,6 @@
 # SEMANA 3 - interface, events, required, import, modifier
 
-## 1) import  
+# 1) import  
 
 Você pode importar arquivos locais e externos no Solidity.
 
@@ -52,7 +52,7 @@ ref : [Solidity Tutorial: All About Imports](https://betterprogramming.pub/solid
 
 obs: estudar sobre o @xxxx , da lib - como e feito a referencia.
 
-## 2)  library
+# 2)  library
 
 As bibliotecas são semelhantes aos contratos, mas você não pode declarar nenhuma variável de estado e não pode enviar ether.
 
@@ -65,7 +65,7 @@ Caso contrário, a biblioteca deve ser implantada e vinculada antes que o contra
 [library.sol](library.sol)
 
 
-## 3) interface
+# 3) interface
 
   Você pode interagir com outros contratos declarando uma Interface.
 
@@ -77,7 +77,7 @@ Caso contrário, a biblioteca deve ser implantada e vinculada antes que o contra
 
 [interface.sol](interface.sol)
 
-## 4) Herança
+# 4) Herança
 
 Solidity suporta herança múltipla. Os contratos podem herdar outro contrato usando a palavra-chave is.
 
@@ -92,13 +92,13 @@ Solidity suporta herança múltipla. Os contratos podem herdar outro contrato us
 [heranca.sol](heranca.sol)
 
 
-## 5) Chamando outros  Contratos:
+# 5) Chamando outros  Contratos:
 
 https://solidity-by-example.org/calling-contract
 
 
   
-## 6) required,assert
+# 6) required,assert
 
       //legado  NAO existe mais 
       function useSuperPowers(){ 
@@ -139,7 +139,7 @@ Então, se revert() e require() ambos reembolsam qualquer sobra de gás, e permi
 
 [RequireExample.sol](RequireExample.sol)
 
-## 7) modifier
+# 7) modifier
 
 O principal caso de uso de modificadores é verificar automaticamente uma condição, antes de executar uma função. Se a função não atender ao requisito do modificador, uma exceção será lançada e a execução da função será interrompida.
 
@@ -164,7 +164,7 @@ O principal caso de uso de modificadores é verificar automaticamente uma condi�
   [Solidity Tutorial: all about Modifiers](https://medium.com/coinmonks/solidity-tutorial-all-about-modifiers-a86cf81c14cb)
   
 
-## 8) Eventos
+# 8) Eventos
 
 Eventos descrevem as ações que são executadas no contrato. Semelhante às funções, os eventos têm parâmetros que precisam ser especificados quando o evento é chamado.
 
@@ -186,7 +186,7 @@ Para chamar um evento, você deve usar a palavra-chave emit com o nome do evento
 [events.sol](events.sol)
 
 
-## 9)  fallback,  address transfer vs send vs call function
+# 9)  fallback,  address transfer vs send vs call function
 
 
 **fallback**  é uma função que não recebe argumentos e não retorna nada.
@@ -203,17 +203,17 @@ Para chamar um evento, você deve usar a palavra-chave emit com o nome do evento
 **transfer** o contrato inteligente de recebimento deve ter uma função de fallback definida, caso contrário, a chamada de transferência gerará um erro.
  Existe um limite de gás de 2300 gás, o que é suficiente para completar a operação de transferência. Ele é codificado para evitar ataques de reentrada.
 
-address payable _to ; 
+     address payable _to ; 
 
-   _to.transfer(msg.value); 
+      _to.transfer(msg.value); 
 
 
 **send** Funciona de forma semelhante à transferência de chamada e tem um limite de gás de 2300 gás também. Ele retorna o status como booleano.
 
- address payable _to; 
+    address payable _to; 
 
-  bool sent =  _to.sent(msg.value); 
-  require(sent, "Fail sent value"); 
+      bool sent =  _to.sent(msg.value); 
+      require(sent, "Fail sent value"); 
 
 
 

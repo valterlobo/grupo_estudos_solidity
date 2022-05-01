@@ -1,16 +1,9 @@
 # SEMANA 2 - Solidity mapping , array , if, for, while,  function.
 
-## 1) XXXXXXXXXXX
-
-#### ?????? 
-
-
-
-
-   
-
- ## 2) Mapping
+ # 1) Mapping
  
+ Os mapeamentos são pares chave-valor encapsulados ou empacotados juntos. Os mapeamentos estão mais próximos de dicionários ou objetos em JavaScript. Normalmente, você usa mapeamentos para modelar objetos do mundo real e realizar pesquisas de dados mais rápidas.
+
    - Os mapas são criados com o mapeamento de sintaxe (keyType => valueType).
 
    - O keyType pode ser qualquer tipo de valor interno, bytes, string ou qualquer contrato.
@@ -22,17 +15,17 @@
      [mapping.sol](mapping.sol)
 
 
- ## 3) Array 
+ # 2) Array
 
    - O array pode ter um tamanho fixo em tempo de compilação ou um tamanho dinâmico.
   
   [array.sol](array.sol)
     
-## 4) Condicional if  
+# 3) Condicional if  
   
   [ifelse.sol](ifelse.sol)
   
-## 5) Loop : for, while:
+## 4) Loop : for, while:
 
    - Solidity suporta loops for, while e do while.
 
@@ -43,9 +36,11 @@
    [loop.sol](loop.sol)
 
 
-## 6) Funções:
+# 5) Funções:
 
-   - Existem várias maneiras de retornar saídas de uma função. As funções públicas não podem aceitar certos tipos de dados como entradas ou saídas.
+Em um contrato, as unidades de código executáveis são conhecidas como funções. As funções descrevem uma única ação para obter uma tarefa. Elas são reutilizáveis e também podem ser chamadas de outros arquivos de origem, como bibliotecas. As funções do Solidity se comportam de modo semelhante às funções em outras linguagens de programação.
+
+Existem várias maneiras de retornar saídas de uma função. As funções públicas não podem aceitar certos tipos de dados como entradas ou saídas.
     
           // O corpo de uma função.
           function funcao( param1 tipo, param2 tipo ) return (uint) {
@@ -91,7 +86,8 @@
   
                    contract pureExample {
                         // other contract functions
-                        function pureComputation(uint para1 , uint para2) public pure returns(uint result) {
+                        function pureComputation(uint para1 , uint para2) public pure returns(uint result) 
+                        {
                             // do whatever with para1 and para2 and assign to result as below
                             result = para1 + para2;
                             return  result;
@@ -112,13 +108,11 @@
                         }
 
 
-
-
    [function.sol](function.sol)
    
    [payable.sol](payable.sol)
 
-## 7) Storage, Memory and Calldata
+# 6) Storage, Memory and Calldata
 
 As variáveis são declaradas como **storage**, **memory** ou **calldata** para especificar explicitamente a localização dos dados.
 
@@ -126,23 +120,16 @@ As variáveis são declaradas como **storage**, **memory** ou **calldata** para 
  - memory - a variável está na memória e existe enquanto uma função está sendo chamada
  - calldata - localização de dados especial que contém argumentos de função
 
+REF:  Data Location in Solidity Explained -> https://blockheroes.dev/data-location-in-solidity/
+
+
  [datalocations.sol](datalocations.sol)
  
-
-## 8) struct
-
-Você pode definir seu próprio tipo criando um struct.
-Eles são úteis para agrupar dados relacionados.
-Os structs podem ser declarados fora de um contrato e importados em outro contrato.
-
- [structs.sol](structs.sol)
  
-
-  
 
 
    # PROGRAMANDO
-  
+
    ### a) É possível alterar uma variável pública do contrato por chamada externa?
    
    ### b) Problema de "out of gas" em funções que possuem o tipo "delete":

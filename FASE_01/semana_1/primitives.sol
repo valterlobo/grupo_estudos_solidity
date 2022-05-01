@@ -52,6 +52,8 @@ contract Primitives {
     uint256 public defaultUint; // 0
     int256 public defaultInt; // 0
     address public defaultAddr; // 0x0000000000000000000000000000000000000000
+    string shipped = "shipped"; // shipped
+
 
 
     function overflowTest() public {
