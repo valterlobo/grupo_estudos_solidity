@@ -48,9 +48,8 @@ contract Primitives {
 
     bytes c =new bytes(0);
 
-    uint256  sizeC =  c.length; 
-
-
+    uint256  sizeC =  c.length;
+    
     // Valores padrão
     // Variáveis não atribuídas têm um valor padrão
     bool public defaultBoo; // false

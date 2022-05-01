@@ -218,6 +218,8 @@ bytes: Matriz de bytes de tamanho dinâmico, consulte arrays . Não é um tipo d
 
 string - String codificada em UTF-8 de tamanho dinâmico, consulte arrays . Não é um tipo de valor!
 
+***O termo bytes no Solidity representa uma matriz dinâmica de bytes. É um atalho para byte[] .***
+
 [Solidity Tutorial : all about Bytes](https://jeancvllr.medium.com/solidity-tutorial-all-about-bytes-9d88fdb22676)
 
 [primitives.sol](primitives.sol)
