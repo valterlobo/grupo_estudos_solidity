@@ -135,6 +135,9 @@ Gás é uma unidade de conta dentro do EVM usada no cálculo de uma taxa de tran
  ![deploy](deploy.gif)
 
 
+## GAS 
+ https://ethereum.org/en/developers/docs/gas/
+
  ## 3) Como trabalhar com ponto flutuante com solidity
 
   solididty - tipos ponto flutuante/decimal/float
