@@ -1,4 +1,4 @@
-# SEMANA 4 - transaction, gas, ABI, WEB3.js, Decimal
+# SEMANA 4 - transaction, gas, WEB3.js, decimal
 
 
 # 1) Sobre etherum
