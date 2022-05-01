@@ -7,7 +7,7 @@ O Solidity dá suporte à herança, o que significa que as funções, variáveis
 
 # 1) Maquina virtual do Ethereum
 
-A Máquina Virtual Ethereum ou EVM é o ambiente de tempo de execução para contratos inteligentes no Ethereum. Não é apenas sandbox, mas na verdade completamente isolado, o que significa que o código executado dentro do EVM não tem acesso à rede, sistema de arquivos ou outros processos. Os contratos inteligentes têm acesso limitado a outros contratos inteligentes.
+A Máquina Virtual Ethereum ou EVM é o ambiente de tempo de execução para contratos inteligentes no Ethereum. EVM completamente isolada, o que significa que o código executado dentro do EVM não tem acesso à rede, sistema de arquivos ou outros processos. Os contratos inteligentes têm acesso limitado a outros contratos inteligentes.
 
 ## **Contas**
 
@@ -55,7 +55,7 @@ Cada conta tem uma área de dados chamada ***storage***, que é persistente entr
 
 A segunda área de dados é chamada de ***memória***, da qual um contrato obtém uma instância recém-limpa para cada chamada de mensagem. A memória é linear e pode ser endereçada em nível de byte, mas as leituras são limitadas a uma largura de 256 bits, enquanto as gravações podem ter 8 bits ou 256 bits de largura. A memória é expandida por uma palavra (256 bits), ao acessar uma palavra de memória não tocada anteriormente. No momento da expansão, o custo em gás deve ser pago.
 
-O EVM não é uma máquina de pilha, portanto, todos os cálculos são realizados em uma área de dados chamada pilha. Tem um tamanho máximo de 1024 elementos e contém palavras de 256 bits. O acesso à pilha é limitado ao topo da seguinte forma: É possível copiar um dos 16 elementos mais altos para o topo da pilha ou trocar o elemento mais alto por um dos 16 elementos abaixo dele . Não é possível apenas acessar elementos arbitrários mais profundos na pilha sem primeiro remover o topo da pilha.
+O EVM  é uma máquina de pilha, portanto, todos os cálculos são realizados em uma área de dados chamada pilha. Tem um tamanho máximo de 1024 elementos e contém palavras de 256 bits. O acesso à pilha é limitado ao topo da seguinte forma: É possível copiar um dos 16 elementos mais altos para o topo da pilha ou trocar o elemento mais alto por um dos 16 elementos abaixo dele . Não é possível apenas acessar elementos arbitrários mais profundos na pilha sem primeiro remover o topo da pilha.
 
 **Conjunto de instruções** 
 
