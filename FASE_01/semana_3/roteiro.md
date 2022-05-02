@@ -6,10 +6,7 @@ Você pode importar arquivos locais e externos no Solidity.
 
 **Local** -  Está a na estrutura de pastas local.
 
-  [Fool.sol](Fool.sol)
-  
-  [Import.sol](Import.sol)
-
+ 
 
 **External**
 
@@ -31,7 +28,6 @@ Você pode importar arquivos locais e externos no Solidity.
  
  - **Renomeie o que você está importando**: se quiser usar nomes mais significativos em seu contexto e para clareza de código.
 
-ref : [Solidity Tutorial: All About Imports](https://betterprogramming.pub/solidity-tutorial-all-about-imports-c65110e41f3a)
 
 
 **OpenZeppelin** 
@@ -50,20 +46,54 @@ ref : [Solidity Tutorial: All About Imports](https://betterprogramming.pub/solid
             }
         }
 
-obs: estudar sobre o @xxxx , da lib - como e feito a referencia.
+
+**Base Path and Include Paths**
+
+Recomenda-se definir o caminho base para o diretório raiz do seu projeto e usar os caminhos de inclusão para especificar locais adicionais que podem conter bibliotecas das quais seu projeto depende. Isso permite importar dessas bibliotecas de maneira uniforme, não importa onde elas estejam localizadas no sistema de arquivos em relação ao seu projeto. Por exemplo, se você usa npm para instalar pacotes e seu contrato imports ***@openzeppelin/contracts/utils/Strings.sol***, você pode usar essas opções para informar ao compilador que a biblioteca pode ser encontrada em um dos diretórios de pacotes npm:
+
+    solc contract.sol \
+     --base-path . \
+     --include-path node_modules/ \
+     --include-path /usr/local/lib/node_modules/
+
+***Isto é feito de  forma transparente nas ferramentas de build de contratos.***
+
+ [Fool.sol](Fool.sol)
+  
+[Import.sol](Import.sol)
+
+
+ref : [Solidity Tutorial: All About Imports](https://betterprogramming.pub/solidity-tutorial-all-about-imports-c65110e41f3a)
+
 
 # 2)  library
 
-As bibliotecas são semelhantes aos contratos, mas você não pode declarar nenhuma variável de estado e não pode enviar ether.
+A libraryem Solidity é um tipo diferente de contrato inteligente que contém código reutilizável. Uma vez implantado no blockchain (apenas uma vez), é atribuído um endereço específico e suas propriedades/métodos podem ser reutilizados muitas vezes por outros contratos na rede Ethereum.
+  
+  ### Benefícios
 
-Uma biblioteca é incorporada ao contrato se todas as funções da biblioteca forem internas.
+- Usabilidade: As funções em uma biblioteca podem ser usadas por muitos contratos. Se você tiver muitos contratos com algum código comum, poderá implantar esse código comum como uma biblioteca.
+- Econômico: A implantação de código comum como biblioteca economizará gás, pois o gás também depende do tamanho do contrato. Usar um contrato básico em vez de uma biblioteca para dividir o código comum não economizará gás porque no Solidity, a herança funciona copiando o código.
+ - Bons complementos: ***As bibliotecas do Solidity podem ser usadas para adicionar funções de membro a tipos de dados***. Por exemplo, pense em bibliotecas como as bibliotecas padrão ou pacotes que você pode usar em outras linguagens de programação para realizar operações matemáticas complexas em números.
 
-Caso contrário, a biblioteca deve ser implantada e vinculada antes que o contrato seja implantado.
+### Restrições
+  - Eles não têm nenhum armazenamento (portanto, não podem ter variáveis ​​de estado não constantes)
+  - Eles não podem conter éteres (portanto, não podem ter uma função de fallback )
+  - Não permite funções a pagar (já que não podem conter éteres)
+  - Não pode herdar nem ser herdado
+  - Não pode ser destruído (sem selfdestruct()função desde a versão 0.4.20)
 
-??? use library ??????
+
+## Como instalar  library?
+A implantação de biblioteca é um pouco diferente da implantação regular de contrato inteligente. Aqui estão dois cenários:
+
+- Biblioteca incorporada: se um contrato inteligente estiver consumindo uma biblioteca que possui apenas funções internas, o EVM simplesmente incorporará a biblioteca ao contrato. Em vez de usar a chamada de delegado para chamar uma função, ele simplesmente usa a instrução JUMP (chamada de método normal). Não há necessidade de implantar a biblioteca separadamente neste cenário.
+  
+- Biblioteca Vinculada: Por outro lado, se uma biblioteca contiver funções públicas ou externas , a biblioteca precisará ser implantada. A implantação da biblioteca gerará um endereço exclusivo no blockchain. Este endereço precisa estar vinculado ao contrato de chamada.
 
 [library.sol](library.sol)
 
+REF: [Solidity Tutorial: all about Libraries](https://jeancvllr.medium.com/solidity-tutorial-all-about-libraries-762e5a3692f9)
 
 # 3) interface
 
