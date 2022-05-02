@@ -56,3 +56,6 @@ otimizando o gas :https://coinsbench.com/tuning-your-smart-contract-d43c02bdba8
 
 Minimal Proxy Contracts (EIP-1167)
 https://coinsbench.com/minimal-proxy-contracts-eip-1167-9417abf973e3
+
+BEST PRACTICES
+https://consensys.github.io/smart-contract-best-practices/
