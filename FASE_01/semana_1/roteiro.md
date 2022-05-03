@@ -120,6 +120,24 @@ Todos os contratos do Solidity normalmente incluem:
    **ESTADO** - declarado fora de uma função, armazenado na blockchain
    
    **GLOBAL** - fornece informações sobre o blockchain
+
+**Variáveis Globais**
+
+Sempre que uma mensagem externa é enviada para um contrato, podemos obter informações a
+respeito dessa mensagem através de variáveis, sendo as principais:
+
+-  **msg.data** (bytes): a informação contida nessa mensagem.  
+- **msg.sender** (address): o endereço que enviou essa mensagem.
+- **msg.value** (uint): o valor em wei que está sendo enviado com a mensagem.
+- **tx.origin** (address): remetente da transação (cadeia de chamadas completa).Importante para identificar quem originou a transação.
+  
+Também podemos obter informações a respeito do bloco atual da rede Ethereum através das
+variáveis:
+ - **blockhash** (uint blocknumber): o hash de um determinado bloco.
+ -  **block.timestamp** (uint): tempo em segundos (unix) de um bloco.
+    
+   [Lista de variaveis globais](https://docs.soliditylang.org/en/v0.8.1/units-and-global-variables.html#block-and-transaction-properties)
+
     
    [variables.sol](variables.sol)
 

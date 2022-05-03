@@ -30,8 +30,12 @@ https://javascript.plainenglish.io/a-beginners-guide-to-solidity-blockchain-deve
 https://medium.com/coinmonks/how-to-build-a-full-stack-decentralized-application-dapp-abd5a27292bd
 
 EVM 
+
 https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy-d6b?s=r
+
 https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy?s=r
+
+https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy-3ea?s=r 
 
 
 blockchain 

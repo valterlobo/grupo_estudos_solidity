@@ -11,7 +11,27 @@ Sao construídos blocos que chegam  a um consenso sobre uma série cada vez maio
 ### **Bloco** 
 Um bloco contém um identificador de cadeia. Deve precedê-lo para que o bloco seja considerado válido.
 
-Quando um nó adiciona um bloco, ele executa as transações nele em sua ordem, alterando os saldos ETH e outros valores de armazenamento das contas Ethereum
+Quando um nó adiciona um bloco, ele executa as transações nele em sua ordem, alterando os saldos ETH e outros valores de armazenamento das contas Ethereum. Dados importantes de um bloco que podemos citar: 
+
+- 1. Number: índice daquele bloco em relação a toda a cadeia de blocos.
+  
+- 2. ParentHash: hash 256-bit de todo o bloco anterior a esse.
+  
+- 3. Nonce: valor 64-bit único que comprova a quantidade que computação que foi necessária
+para minerar esse bloco.
+
+- 4. Benecifiary: endereço da pessoa responsável por minerar esse bloco e que receberá a
+recompensa em ETH.
+- 5. Reward: valor total em ETH da recompensa que o Beneficiary receberá.
+- 6. Difficulty: valor escalar que regula a dificuldade de se minerar aquele bloco. Geralmente é
+controlado pela equipe Ethereum para regular a velocidade de mineração dos blocos.
+- 7. Timestamp: valor escalar que representa uma data e hora calculada pela fundação Unix.
+- 8. GasLimit: valor máximo que pode ser consumidos pelas transações e mensagens dentro
+daquele bloco (geralmente é 8.000.000).
+ - 9. GasUsed: quantidade total de gas usado pelas transações e mensagens naquele bloco.
+- 10. Size: quantidade em bytes utilizada pelas transações e mensagens naquele bloco (calculada
+pelo GasUsed).
+
 
 ### **Estado**
 Os saldos e valores, conhecidos coletivamente como THE STATE, são mantidos em uma árvore Merkle no computador do nó, separada do blockchain.
@@ -57,6 +77,8 @@ Uma transação comum é transferir ETH da conta A para B.
 ### **Ether (ETH)**  
 Criptomoeda gerada pelo protocolo Ethereum como recompensa aos mineradores em um sistema de prova de trabalho para adicionar blocos ao blockchain.É a única moeda aceita no pagamento das taxas de transação, que também vão para os mineradores.
 
+
+
 ### **ETH e Ethereum**
 A recompensa do bloco, juntamente com as taxas de transação, incentiva os mineradores a manter o blockchain crescendo.
 Portanto, a ETH é fundamental para o funcionamento da rede.
@@ -64,6 +86,7 @@ Cada conta Ethereum tem um saldo ETH e pode enviar ETH para qualquer outra conta
 
 
 ### **Contas** 
+
 2 tipos de conta::
 - contas de usuário
 - contratos
@@ -79,6 +102,9 @@ Ambos:
 
 - código: conjunto de funções/declarações de variáveis
 - armazenamento de contrato: valores das variáveis ​​em um determinado momento
+
+ ![CONTAS](contas-endereco.png) 
+
 
 ### **Contrato** 
 
@@ -107,17 +133,80 @@ Ele garante que, para um determinado estado e transação pré-transação, cada
  ![EVM](evm.png) 
 
 ### **Gás**
+
+Sempre que um contrato é executado após ser chamado por uma transação ou mensagem, todas
+as instruções de máquina são executadas em todos os nós da rede Blockchain (lembre-se que
+falamos de uma rede ponto-a-ponto). Essa execução exige um custo computacional (energético,
+banda, desgaste da máquina, etc.) dos nós, portanto, foi definido o gas como a unidade de medição
+desse custo.
+
 Gás é uma unidade de conta dentro do EVM usada no cálculo de uma taxa de transação.
 É a quantidade de ETH que o remetente de uma transação deve pagar ao minerador que inclui a transação no blockchain.
+
+Toda transação exige os campos: GasLimit que é a unidade
+máxima em gas que um usuário está disposto a pagar pela transação, e um valor GasPrice que é
+o valor que o usuário julga pertinente para a unidade de gas. O imposto final é calculado pela fórmula:
+   
+     Fee = GasUsed × GasPrice
+
+Onde o GasUsed é um valor inteiro que representa a quantidade de gas realmente consumida na
+transação e que deve ser menor que o GasLimit. O GasPrice é medido em wei que é a menor  unidade do Ether
+
+Esse valor é obtido do calculo de todas as instruções de máquina utilizadas para realizar  aquela operação, através do que chamamos de opcode (ou, código de operação).
+
+
+
  ![EVM](gas.png)
 
-### **Sidechain**
- 
-É um blockchain independente, projetado para ser compatível com o blockchain Ethereum.Eles podem usar um mecanismo de consenso diferente e têm prós e contras.
+[O ETH Gas Station é uma ferramenta interessante que pode nos auxiliar no cálculo dos parâmetros adequados de transações](ethgasstation.info)
+
+## Transações e Mensagens
+
+**Transação** é um pacote de dados que será enviado de
+uma conta EOA para outra conta EOA, ou para uma conta de contrato. Em resumo, uma transação
+é a maneira como os indivíduos (EOA) se comunicam pela rede Ethereum. Sua estrutura é a
+seguinte:
+
+ - Nonce: número de transações enviadas pelo remetente.
+
+ - To: campo para um endereço de 20 bytes que representa o destinatário da transação. Pode
+ser uma EOA, uma conta de contrato ou vazio.
+
+-  v, r, s: campos que correspondem a assinatura da transação, usados para representar o
+remetente da transação.
+
+ -  Value: campo de valor escalar que representa a quantidade que um indivíduo está enviando
+para outro indivíduo (transferência de fundos) ou para um contrato (depósito de fundos em
+um contrato).
+
+- Data: campo opcional e de tamanho ilimitado que representa um dado que o indivíduo
+deseja passar para um contrato. É a maneira que um EOA pode fazer a chamada de uma
+função em um contrato.
+
+- GasLimit: número máximo de unidades computacionais que o remetente está disposto a
+pagar para executar uma transação (em gas).
+
+- GasPrice: valor que o remetente está disposto a pagar pela execução de cada unidade
+computacional (em wei).
+
+**Mensagens** são objetos virtuais que existem no ambiente de execução do Ethereum e que são
+originadas de chamadas de funções. É a maneira como um contrato se comunica com outro
+contrato ou com uma EOA, dentro da rede Ethereum. A sua diferença em relação a uma transação
+é que as mensagens são produzidas pelos próprios contratos e não pelos usuários EOA. Sua
+estrutura é bem semelhante a das transações.
+
 
 ## [Como o Ethereum funciona](https://docs.google.com/document/d/1N_5fg51AYgwq2lnXGs33VDWNpfhOZGk37bSsC3Q2674/edit?usp=sharing)
     
 ## [EVM Illustraded](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) 
+
+## [Beigepaper: An Ethereum Technical Specification](https://github.com/chronaeon/beigepaper/blob/master/beigepaper.pdf) 
+
+[EVM Deep Dives: The Path to Shadowy Super Coder 🥷 💻 - Part 1](https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy?s=r)
+
+[EVM Deep Dives: The Path to Shadowy Super Coder 🥷 💻 - Part 2](https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy-d6b?s=r)
+
+[EVM Deep Dives: The Path to Shadowy Super Coder 🥷 💻 - Part 3](https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy-3ea?s=r)
 
 
 # 2) WEB3.js

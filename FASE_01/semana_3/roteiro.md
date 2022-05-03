@@ -147,6 +147,9 @@ Então, se revert() e require() ambos reembolsam qualquer sobra de gás, e permi
 
 ### Use require()
 
+  ***Use para verificação de erros externos, como entradas inválidas, receber Ether
+de outro contrato, etc***
+
 - Valide as entradas do usuário, ou seja.require(input<20);
 - Valide a resposta de um contrato externo, ou seja.require(external.send(amount));
 - Valide as condições de estado antes da execução, ou seja. require(block.number > SOME_BLOCK_NUMBER) ou require(balance[msg.sender]>=amount)
@@ -155,15 +158,20 @@ Então, se revert() e require() ambos reembolsam qualquer sobra de gás, e permi
 
 ### Use assert()
 
+***Use para a verificação de erros internos, como índices
+inválidos em vetores, divisões por zero, etc.***
+
 - Verifique se há overflow/underflow , ou seja.c = a+b; assert(c > b)
 - Verifique invariantes , ou seja. assert(this.balance >= totalSupply);
 - Validar o estado depois de fazer alterações
 - Prevenir condições que nunca deveriam ser possíveis
-- Geralmente, você provavelmente usará assertcom menos frequência
+- Geralmente, você provavelmente usará assert com menos frequência
 - Geralmente, ele será usado no final de uma função.
 
 ### Use revert()
 
+   ***geralmente é utilizado com a estrutura if, quando esta não é cumprida a função
+revert desfaz a operação e retorna um erro para o remetente.***
 - Lide com o mesmo tipo de situações que require(), mas com uma lógica mais complexa.
 
 
