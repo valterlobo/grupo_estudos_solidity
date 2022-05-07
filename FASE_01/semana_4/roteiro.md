@@ -196,6 +196,12 @@ contrato ou com uma EOA, dentro da rede Ethereum. A sua diferença em relação 
 estrutura é bem semelhante a das transações.
 
 
+ ![EVM ETHERUM BOOK](https://raw.githubusercontent.com/ethereumbook/ethereumbook/develop/images/evm-architecture.png))
+
+
+
+
+
 ## [Como o Ethereum funciona](https://docs.google.com/document/d/1N_5fg51AYgwq2lnXGs33VDWNpfhOZGk37bSsC3Q2674/edit?usp=sharing)
     
 ## [EVM Illustraded](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) 
@@ -208,6 +214,7 @@ estrutura é bem semelhante a das transações.
 
 [EVM Deep Dives: The Path to Shadowy Super Coder 🥷 💻 - Part 3](https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy-3ea?s=r)
 
+[Ethereum BOOK - The Ethereum Virtual Machine](https://github.com/ethereumbook/ethereumbook/blob/develop/13evm.asciidoc)
 
 # 2) WEB3.js
 

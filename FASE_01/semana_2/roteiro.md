@@ -11,6 +11,17 @@
      valueType pode ser qualquer tipo, incluindo outro mapeamento ou uma matriz.
      
    - Os mapeamentos não são iteráveis.
+            
+          //declarar
+          //mapping(_KeyType => _ValueType)  mapName;
+
+          mapping(address => uint)  myMap;
+           
+          //informar valor 
+           
+          //obter valor 
+           address myAddress; 
+           uint myInt= myMap[myAddress];
      
      [mapping.sol](mapping.sol)
 
