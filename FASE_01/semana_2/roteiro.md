@@ -18,7 +18,9 @@
           mapping(address => uint)  myMap;
            
           //informar valor 
-           
+            address myAddress="0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"; 
+            myMap[myAddress]=10;
+          
           //obter valor 
            address myAddress; 
            uint myInt= myMap[myAddress];
