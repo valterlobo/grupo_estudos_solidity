@@ -208,7 +208,7 @@ A função transfer falha se o saldo do contrato atual não for grande o suficie
 
      <=, <, ==, e !=_>=>
 
-
+[Solidity Tutorial : all about Addresses](https://jeancvllr.medium.com/solidity-tutorial-all-about-addresses-ffcdf7efc4e7)
 ##  Byte
 
 ### **bytes de tamanho fixo**
