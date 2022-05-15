@@ -1,17 +1,7 @@
 
-# SEMANA: 2 - IDE - VSCODE + PLUGINS, HARDHAT, NODES(GETH,INFURA,TESTNET)
+# SEMANA 2 - HARDHAT, PLUGINS, NODES(GETH,INFURA,TESTNET)
 
 
-## 1) IDE - VSCODE + PLUGINS
-
-## 2) HARDHAT 
-
-
-## 3) NODE INFURA
-
-## 4 ) IPFS
-
-## 5 ) DEPLOY
  
  [DEPLOY](deploy.gif)
 
@@ -37,6 +27,8 @@ https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy?s=r
 
 https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy-3ea?s=r 
 
+https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf
+
 
 blockchain 
 https://medium.com/blockchain-stories/the-tale-of-merkle-tree-in-bitcoin-blockchain-2c5fa5a298f7
@@ -46,10 +38,10 @@ How does Ethereum work, anyway?
 https://preethikasireddy.medium.com/how-does-ethereum-work-anyway-22d1df506369
 
 
-https://github.com/ricky-andre/PDF_Docs_Miscellanea
 
 
-https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf
+
+
 
 
 https://vomtom.at/smart-contract-upgrades-and-proxy-patterns/
@@ -63,3 +55,5 @@ https://coinsbench.com/minimal-proxy-contracts-eip-1167-9417abf973e3
 
 BEST PRACTICES
 https://consensys.github.io/smart-contract-best-practices/
+
+https://github.com/ricky-andre/PDF_Docs_Miscellanea
