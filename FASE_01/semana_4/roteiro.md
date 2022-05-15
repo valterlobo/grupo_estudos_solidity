@@ -216,30 +216,18 @@ estrutura é bem semelhante a das transações.
 
 [Ethereum BOOK - The Ethereum Virtual Machine](https://github.com/ethereumbook/ethereumbook/blob/develop/13evm.asciidoc)
 
-# 2) WEB3.js
 
-
-
- 
- ### ABI + WEB3.js
- arquivo no formato JSON 
- informaç~oes para interagir com o contrato
-
-
- 
-  ## Deploy de contrato
+## 2) Deploy de contrato na testnet com remix 
  ![deploy](deploy.gif)
 
-
-## GAS 
- https://ethereum.org/en/developers/docs/gas/
 
  ## 3) Como trabalhar com ponto flutuante com solidity
 
   solididty - tipos ponto flutuante/decimal/float
 
   
-  Ref: 
+  Ref:
+  
    [Matemática em Solidity (Parte 1: Números)](https://www.web3dev.com.br/yanluiz/matematica-em-solidity-parte-1-numeros-4jb2)
 
    [Matemática em Solidity (Parte 2: Overflow)](https://www.web3dev.com.br/yanluiz/matematica-em-solidity-parte-2-overflow-53p6)

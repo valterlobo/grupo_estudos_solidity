@@ -16,13 +16,12 @@
           //mapping(_KeyType => _ValueType)  mapName;
 
           mapping(address => uint)  myMap;
-           
+          address myAddress = ????; 
           //informar valor 
-            address myAddress=0x5B38Da6a701c568545dCfcB03FcB875f56beddC4; 
-            myMap[myAddress]=10;
-          
+           myMap[myAddress] = 120;
+
           //obter valor 
-           address myAddress; 
+           
            uint myInt= myMap[myAddress];
      
      [mapping.sol](mapping.sol)
