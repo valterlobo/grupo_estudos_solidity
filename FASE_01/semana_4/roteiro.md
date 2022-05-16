@@ -216,6 +216,7 @@ estrutura é bem semelhante a das transações.
 
 [Ethereum BOOK - The Ethereum Virtual Machine](https://github.com/ethereumbook/ethereumbook/blob/develop/13evm.asciidoc)
 
+[Crypto Playground](https://vishwas1.github.io/crypto/index.html#/crypto)
 
 ## 2) Deploy de contrato na testnet com remix 
  ![deploy](deploy.gif)
