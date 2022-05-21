@@ -1,4 +1,4 @@
-# SEMANA 4 - transaction, gas, WEB3.js, decimal
+# SEMANA 4 -Etherum blockchain evm, Decimal
 
 
 # 1) Sobre etherum
@@ -217,6 +217,9 @@ estrutura é bem semelhante a das transações.
 [Ethereum BOOK - The Ethereum Virtual Machine](https://github.com/ethereumbook/ethereumbook/blob/develop/13evm.asciidoc)
 
 [Kit para Iniciantes em Desenvolvimento na EVM](https://www.web3dev.com.br/diogoj/kit-para-iniciantes-em-desenvolvimento-na-evm-4nhl)
+
+[Crypto Playground](https://vishwas1.github.io/crypto/index.html#/crypto)
+
 
 ## 2) Deploy de contrato na testnet com remix 
  ![deploy](deploy.gif)
