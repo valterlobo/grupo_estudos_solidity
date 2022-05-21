@@ -206,7 +206,7 @@ estrutura é bem semelhante a das transações.
     
 ## [EVM Illustraded](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) 
 
-## [Beigepaper: An Ethereum Technical Specification](https://github.com/chronaeon/beigepaper/blob/master/beigepaper.pdf) 
+## [Beigepaper: An Ethereum Technical Specification](https://github.com/chronaeon/beigepaper/blob/master/beigepaper.pdf)
 
 [EVM Deep Dives: The Path to Shadowy Super Coder 🥷 💻 - Part 1](https://noxx.substack.com/p/evm-deep-dives-the-path-to-shadowy?s=r)
 
@@ -216,6 +216,7 @@ estrutura é bem semelhante a das transações.
 
 [Ethereum BOOK - The Ethereum Virtual Machine](https://github.com/ethereumbook/ethereumbook/blob/develop/13evm.asciidoc)
 
+[Kit para Iniciantes em Desenvolvimento na EVM](https://www.web3dev.com.br/diogoj/kit-para-iniciantes-em-desenvolvimento-na-evm-4nhl)
 
 ## 2) Deploy de contrato na testnet com remix 
  ![deploy](deploy.gif)
