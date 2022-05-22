@@ -19,7 +19,9 @@
    [ROTEIRO](/FASE_02/roteiro.md)
 
 ## FASE 3 -  PROJETOS/Hackathon
-   O grupo define um  problema para ser desenvolvido durante uma semana.
+
+   - Desenvolver uma DAO para o grupo de estudos( Votaçao, token de recomprensa, mint de NFT para os participantes).
+   - O grupo define um  problema para ser desenvolvido durante uma semana.
    - Duração de uma semana para ser construído.
    - Limitar o escopo para ser possível desenvolver com uma equipe mínima de 2 pessoas.
 

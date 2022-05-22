@@ -6,6 +6,7 @@
 desenvolver estes contratos aqui : 
 https://docs.soliditylang.org/en/v0.8.11/solidity-by-example.html 
 
+contrato de loteria
 
 ## Arquitetura de Dapp
 
