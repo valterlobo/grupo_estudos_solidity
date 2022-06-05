@@ -9,3 +9,6 @@
 ## [DIA 4 - Desenvolvendo a Interface do contrato](roteiro_dia_4.md)
 
 ## [DIA 5 - Juntando tudo - contrato + interface da app](roteiro_dia_5.md)
+
+
+https://medium.com/@stevelukis/building-a-decentralized-bookshelf-app-with-ethereum-network-4a0e1a3b5322
