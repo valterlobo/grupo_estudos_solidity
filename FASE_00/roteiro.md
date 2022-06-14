@@ -10,12 +10,12 @@
 
 ## [DIA 5 - Juntando tudo - contrato + interface da app](roteiro_dia_5.md)
 
+
 Como criar um smartContract e fazer deploy numa rede testnet rinkeby.
 https://boggy-poultry-c5f.notion.site/Como-criar-um-smartContract-e-fazer-deploy-numa-rede-testnet-rinkeby-ba02349f43da4e35be71f75069f79d44
 
 
-
 https://www.codiesalert.com/courses/free-solidity-course/
 
-
+https://medium.com/@stevelukis/building-a-decentralized-bookshelf-app-with-ethereum-network-4a0e1a3b5322
 
