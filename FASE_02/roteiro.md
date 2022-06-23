@@ -12,5 +12,3 @@
 ## [SEMANA 5 - Testes, padrões, economia e gás.](semana_5/roteiro.md)
 
 ## [SEMANA 6 - Segurança em contratos.](semana_6/roteiro.md)
-
-

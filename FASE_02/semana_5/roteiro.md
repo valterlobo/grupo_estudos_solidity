@@ -8,3 +8,5 @@
 
  https://www.web3dev.com.br/devaraujo/como-testar-smart-contracts-ethereum-boas-praticas-de-auditoria-17ch
  
+ ### Smart Contracts Gas optimization techniques
+https://coinsbench.com/smart-contracts-gas-optimization-techniques-2bd07add0e86
