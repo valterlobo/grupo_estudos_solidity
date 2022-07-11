@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+#  Grupo de Estudos de Solididty
 
 
 ## FASE 0 - Meu primeiro Dapp
