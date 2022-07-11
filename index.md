@@ -1,37 +1,33 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/valterlobo/grupo_estudos_solidity/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## FASE 0 - Meu primeiro Dapp
 
-### Markdown
+ Desenvolvendo um Dapp com Smart Contract(Solidity) na blockchain da Ethereum.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+   [ROTEIRO](/FASE_00/roteiro.md)
 
-```markdown
-Syntax highlighted code block
+## FASE 1 - INICIANDO & SOLIDITY BÁSICO
 
-# Header 1
-## Header 2
-### Header 3
+   Básico de solidity com o remix , conceitos basico de blockchain/etherum.
 
-- Bulleted
-- List
+   [ROTEIRO](/FASE_01/roteiro.md)
 
-1. Numbered
-2. List
+## FASE 2 - PRATICANDO  E FERRAMENTAS 
 
-**Bold** and _Italic_ and `Code` text
+   Arquitetura de dapps, ERC20 -tokens , ECR721 - NFT,  web3js, etherjs, 
+   ferramentas de build ( truffle , hardhat ) IDE ( vscode , sublime, plugins ), 
+   testes, básico de segurança, básico de padrões de desenvolvimento para contratos - boas práticas.  
+   [ROTEIRO](/FASE_02/roteiro.md)
 
-[Link](url) and ![Image](src)
-```
+## FASE 3 -  PROJETOS/Hackathon
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+   - Desenvolver uma DAO para o grupo de estudos( Votaçao, token de recomprensa, mint de NFT para os participantes).
+   - O grupo define um  problema para ser desenvolvido durante uma semana.
+   - Duração de uma semana para ser construído.
+   - Limitar o escopo para ser possível desenvolver com uma equipe mínima de 2 pessoas.
 
-### Jekyll Themes
+[ROTEIRO](/FASE_03/roteiro.md)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/valterlobo/grupo_estudos_solidity/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+###REf. 
