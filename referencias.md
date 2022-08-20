@@ -36,6 +36,11 @@ https://preethikasireddy.medium.com/how-does-ethereum-work-anyway-22d1df506369
 ## Cheat-Sheet solidity
 https://intellipaat.com/mediaFiles/2019/03/Solidity-Cheat-Sheet.pdf
 
+## Ethereum Data Structures
+https://arxiv.org/pdf/2108.05513.pdf
+
+## Blockchain developer roadmap 2022
+https://medium.com/@0xblocktrain/blockchain-developer-roadmap-2022-8e2e55543164
 
 ## Free Web3 Resources
 https://github.com/FrancescoXX/free-Web3-resources
