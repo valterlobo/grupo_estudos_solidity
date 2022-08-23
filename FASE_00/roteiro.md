@@ -25,7 +25,9 @@ https://medium.com/@web3silviamargarita/my-day-by-day-to-become-a-smart-contract
 
 ## Ethereum Under the Hood: Part-1 (ver 0.4)
 https://medium.com/coinmonks/ethereum-under-the-hood-part-1-ver-0-4-7ac9ccbfd0f6
-'''
+
+
+
 mkdir  nfts
 cd  nfts
 npm init -y
