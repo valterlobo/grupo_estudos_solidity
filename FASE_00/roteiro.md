@@ -23,7 +23,8 @@ https://medium.com/@stevelukis/building-a-decentralized-bookshelf-app-with-ether
 ## A day by day to become a smart contract developer in 2022 — week 1
 https://medium.com/@web3silviamargarita/my-day-by-day-to-become-a-smart-contracts-developer-on-2022-174c0351d703
 
-
+## Ethereum Under the Hood: Part-1 (ver 0.4)
+https://medium.com/coinmonks/ethereum-under-the-hood-part-1-ver-0-4-7ac9ccbfd0f6
 '''
 mkdir  nfts
 cd  nfts
