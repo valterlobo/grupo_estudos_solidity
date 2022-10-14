@@ -242,8 +242,10 @@ estrutura é bem semelhante a das transações.
    
    [Matemática em Solidity (Parte 5: Expoente e Logaritmo)](https://www.web3dev.com.br/yanluiz/matematica-em-solidity-parte-5-expoente-e-logaritmo-25l5)
 
+Libs: 
 
-
+[Library of mathematical functions operating with IEEE 754 quadruple precision (128 bit) floating point numbers] (https://github.com/abdk-consulting/abdk-libraries-solidity/blob/master/ABDKMathQuad.md)
+[Openzeppelin utils] (https://docs.openzeppelin.com/contracts/4.x/api/utils)
 
 
 
