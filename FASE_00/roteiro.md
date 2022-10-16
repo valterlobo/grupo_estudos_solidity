@@ -10,6 +10,8 @@
 
 ## [ Juntando tudo - contrato + interface da app](roteiro_5.md)
 
+[Blockchain Developer ROADMAP](https://roadmap.sh/blockchain)
+
 
 Como criar um smartContract e fazer deploy numa rede testnet rinkeby.
 https://boggy-poultry-c5f.notion.site/Como-criar-um-smartContract-e-fazer-deploy-numa-rede-testnet-rinkeby-ba02349f43da4e35be71f75069f79d44
