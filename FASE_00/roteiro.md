@@ -23,7 +23,8 @@ https://medium.com/@stevelukis/building-a-decentralized-bookshelf-app-with-ether
 
 ## ANATOMIA DOS CONTRATOS INTELIGENTES
 https://ethereum.org/pt-br/developers/docs/smart-contracts/anatomy/
-
+## Building a Web3 Instant Messaging Application: The Next Generation of Communication
+https://medium.com/coinmonks/building-a-web3-instant-messaging-application-3308dedd8b63
 
 ## A day by day to become a smart contract developer in 2022 — week 1
 https://medium.com/@web3silviamargarita/my-day-by-day-to-become-a-smart-contracts-developer-on-2022-174c0351d703
