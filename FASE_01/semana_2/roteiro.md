@@ -180,3 +180,5 @@ REF:  Data Location in Solidity Explained -> https://blockheroes.dev/data-locati
  ### e) Realizar testes passagem por referencia x valor
 funcao que altera um o valor de um int e outra que alterar o valor de um array de int.
 
+## Solidity Cheat Sheet
+https://medium.com/blockcentric/solidity-cheat-sheet-e63036cca083
